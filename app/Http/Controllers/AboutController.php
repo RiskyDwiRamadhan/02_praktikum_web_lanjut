@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class AboutController extends Controller
 {
     public function about() {
-        return "RISKY DWI RAMADHAN 1941720234";
+        return "NAMA : RISKY DWI RAMADHAN <br> NIM : 1941720234";
        }
 }

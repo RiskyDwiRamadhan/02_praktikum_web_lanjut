@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+// use App\Http\Controllers\PageController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ArticleController;
@@ -25,7 +26,7 @@ use App\Http\Controllers\ProgramController;
 // });
 
 // Route::get('/about', function () {
-//     return "RISKY DWI RAMADHAN 1941720234";
+//     return "NAMA : RISKY DWI RAMADHAN <br> NIM : 1941720234";
 // });
 
 // Route::get('/articles/{id}', function ($id) {
@@ -55,4 +56,4 @@ Route::prefix('program')->group(function () {
 
 Route::get('/about',[NewController::class, 'about']);
 
-Route::resource('contact',[ContactController::class, 'contact']);
+Route::resource('/contact',[ContactController::class, 'contact']);
